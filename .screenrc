@@ -1,0 +1,11 @@
+# don't display copyright notice on startup
+startup_message off
+
+# no more ding-ding
+vbell off
+
+termcapinfo xterm* ti@:te@
+defscrollback 16384
+
+hardstatus off
+hardstatus alwayslastline "%{= kg} %-Lw%{=b w} %n%f %t %{-}%+Lw %=%{= dd}%{kg} %H - %l [%{W} %D %M %d %{W}%c %{kg}]"
