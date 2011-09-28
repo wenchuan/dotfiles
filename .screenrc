@@ -5,7 +5,14 @@ startup_message off
 vbell off
 
 termcapinfo xterm* ti@:te@
+
+# big scrollback
 defscrollback 16384
+
+# smart search
+ignorecase on
 
 hardstatus off
 hardstatus alwayslastline "%{= kg} %-Lw%{=b w} %n%f %t %{-}%+Lw %=%{= dd}%{kg} %H - %l [%{W} %D %M %d %{W}%c %{kg}]"
+
+shell zsh

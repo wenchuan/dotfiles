@@ -2,11 +2,12 @@
 set nocompatible
 
 " enable file typing
-filetype on
+filetype indent on
 
 " give me nice-looking color
 syntax enable
 syntax on
+let g:solarized_termcolors=16
 set background=dark
 colorscheme solarized
 
@@ -37,13 +38,13 @@ set expandtab
 set ts=2
 set sw=2
 
-" clicky
-set mouse=a
-
 " no more crap
 set nobackup
 set nowritebackup
 set noswapfile
+
+" but save my modified file if the session is suspended
+set autowrite
 
 " set title bar
 set title
@@ -68,3 +69,7 @@ endif
 " hightlight over-length lines
 highlight OverLength ctermbg=red ctermfg=white
 match OverLength /\%76v.\+/
+
+" fun insertos section
+" rfc822 conformant date
+iab rfcdate <C-R>=strftime("%a, %d %b %Y %H:%M:%S %z")<CR>
