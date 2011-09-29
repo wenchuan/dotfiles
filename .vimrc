@@ -1,9 +1,6 @@
 " vim is not vi
 set nocompatible
 
-" enable file typing
-filetype indent on
-
 " give me nice-looking color
 syntax enable
 syntax on
@@ -30,8 +27,7 @@ set showcmd
 " no more ding-ding
 set visualbell
 
-" c rules
-set cindent shiftwidth=2
+" indenting options
 
 " no more <TAB>
 set expandtab
@@ -73,3 +69,12 @@ match OverLength /\%76v.\+/
 " fun insertos section
 " rfc822 conformant date
 iab rfcdate <C-R>=strftime("%a, %d %b %Y %H:%M:%S %z")<CR>
+
+" enable file typing
+filetype indent on
+
+au FileType c set cindent shiftwidth=2
+au FileType cpp set cindent shiftwidth=2
+au FileType gitcommit set tw=75
+au FileType mail set tw=75
+au FileType make set sw=8 ts=8 noet

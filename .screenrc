@@ -16,3 +16,5 @@ hardstatus off
 hardstatus alwayslastline "%{= kg} %-Lw%{=b w} %n%f %t %{-}%+Lw %=%{= dd}%{kg} %H - %l [%{W} %D %M %d %{W}%c %{kg}]"
 
 shell zsh
+
+# vim: set ft=screen
