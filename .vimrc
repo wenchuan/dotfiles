@@ -75,6 +75,9 @@ filetype indent on
 
 au FileType c set cindent shiftwidth=2
 au FileType cpp set cindent shiftwidth=2
-au FileType gitcommit set tw=75
-au FileType mail set tw=75
+au FileType gitcommit set tw=75 spell
+au FileType mail set tw=75 spell
 au FileType make set sw=8 ts=8 noet
+au FileType tex set spell
+
+" vim: ft=vim
