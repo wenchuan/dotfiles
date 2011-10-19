@@ -1,0 +1,11 @@
+# this file is sourced by ~/.zshrc to set up colors for interactive zsh.
+# vim: set ft=zsh
+
+LS_COLORS=$LS_COLORS:'*.tar=31:*.gz=31:*.bz2=31:*.tgz=31:*.zip=31:*.rar=31:*.z=31:*.Z=31'
+LS_COLORS=$LS_COLORS:'*.sh=32'
+LS_COLORS=$LS_COLORS:'*.mp3=33'
+LS_COLORS=$LS_COLORS:'*.txt=34:*.TXT=34:*.pdf=34:*.PDF=34:*.htm=34:*.html=34:*.log=34'
+LS_COLORS=$LS_COLORS:'*.jpg=35:*.jpeg=35:*.JPEG=35:*.gif=35:*.GIF=35:*.png=35:*.PNG=35:*.bmp=35:*.BMP=35'
+LS_COLORS=$LS_COLORS:'*.mp4=36:*.avi=36:*.mkv=36:*.mov=36'
+LS_COLORS=$LS_COLORS:'*.c=37:*.h=37:*.cpp=37:*.C=37:*.hpp=37:*.py=37:*.hs=37:*.ml=37:*.java=37'
+export LS_COLORS

@@ -1,0 +1,41 @@
+# this file is sourced by ~/.zshrc to set up zsh aliases for interactive zsh.
+
+alias v='vim'
+alias c='clear'
+alias p='pwd'
+alias l='less'
+alias u='cd ..'
+alias note='cd ~/projects/log && vim ~/projects/log/log.txt'
+
+alias ls='ls -h -F --color=auto'
+alias ll='ls -l'
+alias lla='ll -a'
+alias du='du -h'
+alias df='df -h'
+
+# git
+alias gs='git status'
+alias gb='git branch'
+alias gl='git log'
+alias gll='git log --stat'
+
+# maximize compiler warning
+alias gcc='gcc -Wall -Wextra -pedantic'
+alias g++='g++ -Wall -Wextra -pedantic -Weffc++'
+alias clang='clang -Wall'
+alias clang++='clang++ -Wall'
+
+# readline wrapper around REPL
+alias python='rlwrap python'
+alias ocaml='rlwrap ocaml'
+
+# ucla
+alias cs='ssh -C cheetah.cs.ucla.edu'
+alias csx='ssh -CX cheetah.cs.ucla.edu'
+alias seas='ssh -C lnxsrv.seas.ucla.edu'
+alias seasx='ssh -CX lnxsrv.seas.ucla.edu'
+
+# ubuntu stuff
+alias update='sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoclean && sudo apt-get autoremove'
+
+# vim: set ft=zsh

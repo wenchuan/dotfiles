@@ -1,0 +1,5 @@
+# This file set up shell variables
+
+export EDITOR=vim
+
+# vim: set ft=zsh
