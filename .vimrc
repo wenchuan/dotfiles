@@ -1,74 +1,110 @@
-" vim is not vi
+" vim is better than vi
 set nocompatible
 
-" give me nice-looking color
+" Turn off backup
+set nobackup
+set nowritebackup
+set noswapfile
+
+" But save my modified file if the session is suspended
+set autowrite
+
+" set title bar
+set title
+
+
+" Display options
+
+" Set up colors
 syntax enable
 syntax on
 let g:solarized_termcolors=16
 set background=dark
 colorscheme solarized
 
-" search options
-set incsearch
-set hlsearch
-set magic
+" Show the matching bracket
 set showmatch
 
-" ah, intelligent cased searching is good
-set ignorecase
-set smartcase
-
-" tell me where am i
+" Show me where I am
 set cursorline
 
-" tell me what i'm typing
+" Show me what I am doing
 set showcmd
 
-" no more ding-ding
+" Use visual bell instead of beeping
 set visualbell
 
-" indenting options
+" More room on both ends
+set scrolloff=3
 
-" no more <TAB>
-set expandtab
-set ts=2
-set sw=2
+" Highlight over long lines
+highlight OverLength ctermbg=red ctermfg=white
+match OverLength /\%76v.\+/
 
-" no more crap
-set nobackup
-set nowritebackup
-set noswapfile
 
-" but save my modified file if the session is suspended
-set autowrite
+" Search options
 
-" set title bar
-set title
+" Incremental search
+set incsearch
 
-" better-looking search highlights
+" Highlight search results
+set hlsearch
+
+" Enable magic character set
+set magic
+
+" Intelligent case searching
+set smartcase
+
+" Set highlight colors
 hi Search ctermfg=0 ctermbg=3
 hi statusline ctermfg=1 ctermbg=0
 
-" one less key
+
+" Splitting options
+
+" Do horizontal split in vimdiff
+" set diffopt=horizontal
+
+" No resizing after splitting or closing windows
+set noequalalways
+
+" Stack up windows
 set winminheight=0
+
+" Move faster between windows
 map <c-j> <c-w>j<c-w>_
 map <c-k> <c-w>k<c-w>_
 map <c-h> <c-w>h
 map <c-l> <c-w>l
 
-" bring me back to where i was
+
+" Formatting options
+
+" Use space rather tab
+set expandtab
+
+" Tabs are 2 characters
+set tabstop=2
+
+" (Auto)indent uses 2 characters
+set shiftwidth=2
+
+
+" (Auto)functions
+
+" Bring me back to where I was
 if has("autocmd")
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
 \| exe "normal g'\"" | endif
 endif
 
-" hightlight over-length lines
-highlight OverLength ctermbg=red ctermfg=white
-match OverLength /\%76v.\+/
 
-" fun insertos section
-" rfc822 conformant date
+" rfc822 conformable date
 iab rfcdate <C-R>=strftime("%a, %d %b %Y %H:%M:%S %z")<CR>
+
+
+" File type specific options
 
 " enable file typing
 filetype indent on
