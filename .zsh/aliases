@@ -1,13 +1,14 @@
 # this file is sourced by ~/.zshrc to set up zsh aliases for interactive zsh.
 
 alias v='vim'
+alias b='bc'
 alias c='clear'
 alias p='pwd'
-alias l='less'
 alias u='cd ..'
-alias note='cd ~/projects/log && vim ~/projects/log/log.txt'
+alias note='cd ~/projects/log && vim ~/projects/log/current.log'
 
 alias ls='ls -F --color=auto'
+alias l='ls'
 alias ll='ls -lh'
 alias lla='ll -a'
 alias du='du -h'
