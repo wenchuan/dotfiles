@@ -27,8 +27,9 @@ alias clang='clang -Wall'
 alias clang++='clang++ -Wall'
 
 # readline wrapper around REPL
-alias python='rlwrap python'
+#alias python='python2.7'
 alias ocaml='rlwrap ocaml'
+alias scheme='rlwrap scheme'
 
 # ucla
 alias cs='ssh -C cheetah.cs.ucla.edu'

@@ -1,5 +1,6 @@
 # This file set up shell variables
 
 export EDITOR=vim
+export PYTHONSTARTUP=~/.pythonrc
 
 # vim: set ft=zsh
