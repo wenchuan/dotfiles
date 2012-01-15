@@ -54,6 +54,7 @@ set hlsearch
 set magic
 
 " Intelligent case searching
+set ignorecase
 set smartcase
 
 " Set highlight colors
@@ -106,7 +107,7 @@ iab rfcdate <C-R>=strftime("%a, %d %b %Y %H:%M:%S %z")<CR>
 
 " File type specific options
 
-" enable file typing
+" Enable file typing
 filetype indent on
 
 au FileType c set cindent shiftwidth=2
@@ -115,5 +116,6 @@ au FileType gitcommit set tw=75 spell
 au FileType mail set tw=75 spell
 au FileType make set sw=8 ts=8 noet
 au FileType tex set spell
+au FileType scheme set lisp autoindent
 
 " vim: ft=vim
