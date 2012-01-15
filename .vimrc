@@ -37,6 +37,10 @@ set visualbell
 " More room on both ends
 set scrolloff=3
 
+" Status line
+set ls=2
+set statusline=%F%h%m%r%=ch:0x%B\ \ %l,%c%V\ %P
+
 " Highlight over long lines
 highlight OverLength ctermbg=red ctermfg=white
 match OverLength /\%76v.\+/
