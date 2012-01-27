@@ -104,7 +104,6 @@ au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
 \| exe "normal g'\"" | endif
 endif
 
-
 " rfc822 conformable date
 iab rfcdate <C-R>=strftime("%a, %d %b %Y %H:%M:%S %z")<CR>
 
@@ -121,5 +120,6 @@ au FileType mail set tw=75 spell
 au FileType make set sw=8 ts=8 noet
 au FileType tex set spell
 au FileType scheme set lisp autoindent
+au FileType python set ts=4 sw=4
 
 " vim: ft=vim
