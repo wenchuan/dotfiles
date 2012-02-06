@@ -1,14 +1,31 @@
-import atexit
-import os
+# vim: ft=python
+
 import re
-import readline
-import rlcompleter
 import socket
 import _socket
-import sys
 import time
+import os
+import sys
+import pprint
 
-history = os.path.expanduser('~/.python_history')
-readline.read_history_file(history)
-readline.parse_and_bind('tab: complete')
-atexit.register(readline.write_history_file, history)
+def purty_print(value):
+    if value is not None:
+        try:
+            import __builtin__
+            __builtin__._ = value
+        except ImportError:
+            __builtins__._ = value
+        pprint.pprint(value)
+sys.displayhook = purty_print
+
+try:
+    import readline
+except ImportErro:
+    print("Module readline not available.");
+else:
+    import rlcompleter
+    import atexit
+    history = os.path.expanduser('~/.python_history')
+    readline.read_history_file(history)
+    readline.parse_and_bind('tab: complete')
+    atexit.register(readline.write_history_file, history)
