@@ -1,0 +1,23 @@
+[alias]
+  s = status
+  b = branch
+  d = difftool
+  co = checkout
+  lg = log -p
+
+[color]
+  ui = auto
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+
+[user]
+	email = vvenchuan@gmail.com
+  name = Wenchuan Weng
+
+[diff]
+	tool = vimdiff
+
+[difftool]
+	prompt = false

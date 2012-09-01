@@ -1,0 +1,2 @@
+visualizer_fifo_path = "/tmp/mpd.fifo"
+
