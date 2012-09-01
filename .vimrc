@@ -45,6 +45,10 @@ set statusline=%F%h%m%r%=ch:0x%B\ \ %l,%c%V\ %P
 highlight OverLength ctermbg=red ctermfg=white
 match OverLength /\%76v.\+/
 
+" Display whitespace characters
+set list
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+
 
 " Search options
 
