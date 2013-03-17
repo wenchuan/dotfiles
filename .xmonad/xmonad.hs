@@ -12,7 +12,7 @@ main = do
         , layoutHook = avoidStruts  $  layoutHook defaultConfig
         , logHook = dynamicLogWithPP xmobarPP
                         { ppOutput = hPutStrLn xmproc
-                        , ppTitle = xmobarColor "green" "" . shorten 50
+                        , ppTitle = xmobarColor "brown" "" . shorten 50
                         }
         , modMask = mod4Mask -- Use Super instead of Alt
         } `additionalKeys`
