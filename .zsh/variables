@@ -2,5 +2,9 @@
 
 export EDITOR=vim
 export PYTHONSTARTUP=~/.pythonrc
+export PATH=$PATH:~/bin
+
+autoload -U colors && colors
+export PROMPT="[%{$fg[blue]%}%D %{$reset_color%}%{$fg[cyan]%}%*%{$reset_color%}] %{$fg[red]%}%~%{$reset_color%} %% "
 
 # vim: set ft=zsh
