@@ -43,7 +43,6 @@ set statusline=%F%h%m%r%=ch:0x%B\ \ %l,%c%V\ %P
 
 " Highlight over long lines
 highlight OverLength ctermbg=red ctermfg=white
-match OverLength /\%76v.\+/
 
 " Display whitespace characters
 set list
@@ -125,5 +124,7 @@ au FileType make set sw=8 ts=8 noet
 au FileType tex set spell
 au FileType scheme set lisp autoindent
 au FileType python set ts=4 sw=4
+au FileType python match OverLength /\%76v.\+/
+au FileType java set ts=4 sw=4
 
 " vim: ft=vim

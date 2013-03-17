@@ -7,17 +7,17 @@
 
 [color]
   ui = auto
-	branch = auto
-	diff = auto
-	interactive = auto
-	status = auto
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
 
 [user]
-	email = vvenchuan@gmail.com
+  email = vvenchuan@gmail.com
   name = Wenchuan Weng
 
 [diff]
-	tool = vimdiff
+  tool = vimdiff
 
 [difftool]
-	prompt = false
+  prompt = false
