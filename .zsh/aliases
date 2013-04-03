@@ -26,7 +26,7 @@ alias gl='git log'
 alias gll='git log --stat'
 
 # maximize compiler warning
-alias gcc='gcc -Wall -Wstrict-prototypes -Wextra -pedantic'
+alias gcc='gcc -std=c99 -Wall -Wstrict-prototypes -Wextra -pedantic'
 alias g++='g++ -Wall -Wextra -pedantic -Weffc++'
 alias clang='clang -Wall'
 alias clang++='clang++ -Wall'
@@ -35,12 +35,6 @@ alias clang++='clang++ -Wall'
 #alias python='python2.7'
 alias ocaml='rlwrap ocaml'
 alias scheme='rlwrap scheme'
-
-# ucla
-alias cs='ssh -C cheetah.cs.ucla.edu'
-alias csx='ssh -CX cheetah.cs.ucla.edu'
-alias seas='ssh -C lnxsrv.seas.ucla.edu'
-alias seasx='ssh -CX lnxsrv.seas.ucla.edu'
 
 # ubuntu stuff
 alias update='sudo apt-get update && sudo apt-get upgrade && sudo apt-get autoclean && sudo apt-get autoremove'
