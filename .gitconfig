@@ -1,9 +1,13 @@
 [alias]
   s = status
   b = branch
+  ba = branch -a
   d = difftool
   co = checkout
   lg = log -p
+  l = log --graph --pretty=oneline --abbrev-commit --decorate
+  ll = log --stat --graph --pretty=oneline --abbrev-commit --decorate
+  sls = stash list
 
 [color]
   ui = auto
