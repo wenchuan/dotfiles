@@ -1,8 +1,8 @@
 # '.zshrc' is sourced by interactive zsh shell to set up zsh aliases,
 #          functions, key-bindings, options.
 
-# get cores
-ulimit -c unlimit
+# do not get cores
+ulimit -c 0
 
 # set up variables
 source ~/.zsh/variables
