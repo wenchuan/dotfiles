@@ -1,0 +1,44 @@
+set from="Wenchuan Weng <wenchuan@amazon.com>"
+set folder="~/mail"
+set mbox="=mbox"
+set move="no"
+set postponed="=postponed"
+set record="=sent-mail"
+
+mailboxes =mbox
+
+# Read mail
+#set mailcap_path=~/.mutt/mailcap
+auto_view text/html
+set timeout=10
+set mail_check=10
+set sort=threads
+set sort_aux=last-date-received
+set move=no
+set mark_old=no
+set display_filter="fold --width=80 --spaces"
+ignore * # ignore all headers except for the following
+unignore Date: From: To: Cc: Bcc: Subject:
+set pager_index_lines=5
+set pager_context=1
+set pager_stop    # don't go to the next message after paging thru the current
+set index_format='%{%m/%d-%H:%M} %-15.15F [%Z] %s'
+set delete=yes
+
+macro pager \cv <pipe-entry>'urlview'<enter> 'Follo links with urlview'
+
+# Compose mail
+set editor="vim -c 'set tw=65'"
+set askcc
+set fast_reply    # don't ask so much when replying or forwarding
+unset metoo
+set markers=no
+set include=yes
+set edit_headers
+set forward_format="Fwd: %s"
+
+# Send mail
+set copy=yes
+
+source ~/.mutt/colors.muttrc
+source ~/.mutt/binding.muttrc
