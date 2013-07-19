@@ -22,7 +22,7 @@ unignore Date: From: To: Cc: Bcc: Subject:
 set pager_index_lines=5
 set pager_context=1
 set pager_stop    # don't go to the next message after paging thru the current
-set index_format='%{%m/%D-%H:%M} %-15.15F [%Z] %s'
+set index_format='%[%m/%D-%H:%M] %-15.15F [%Z] %s'
 set delete=yes
 
 macro pager \cv <pipe-entry>'urlview'<enter> 'Follo links with urlview'
