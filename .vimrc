@@ -18,6 +18,12 @@ set title
 " Set up colors
 syntax enable
 syntax on
+
+" Disable syntax highlighting in diff mode
+if &diff
+  syntax off
+endif
+
 let g:solarized_termcolors=16
 set background=dark
 colorscheme solarized
