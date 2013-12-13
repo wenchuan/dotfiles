@@ -12,6 +12,8 @@ set autowrite
 " set title bar
 set title
 
+" Map ; to :
+nnoremap ; :
 
 " Display options
 
