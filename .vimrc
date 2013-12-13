@@ -100,11 +100,11 @@ map <c-l> <c-w>l
 " Use space rather tab
 set expandtab
 
-" Tabs are 2 characters
-set tabstop=2
+" Tabs are 4 characters
+set tabstop=4
 
-" (Auto)indent uses 2 characters
-set shiftwidth=2
+" (Auto)indent uses 4 characters
+set shiftwidth=4
 
 
 " (Auto)functions
