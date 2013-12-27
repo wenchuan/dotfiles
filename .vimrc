@@ -54,7 +54,7 @@ highlight OverLength ctermbg=red ctermfg=white
 
 " Display whitespace characters
 set list
-set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
+set listchars=tab:>-,trail:~,extends:>,precedes:<
 
 
 " Search options
