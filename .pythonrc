@@ -1,10 +1,10 @@
 # vim: ft=python
 
-import re
-import socket
-import _socket
-import time
+import atexit
 import os
+import readline
+import rlcompleter
+
 import sys
 import pprint
 
@@ -18,14 +18,18 @@ def purty_print(value):
         pprint.pprint(value)
 sys.displayhook = purty_print
 
-try:
+historyPath = os.path.expanduser("~/.pyhistory")
+
+def save_history(historyPath=historyPath):
     import readline
-except ImportErro:
-    print("Module readline not available.");
+    readline.write_history_file(historyPath)
+
+if os.path.exists(historyPath):
+    readline.read_history_file(historyPath)
+if 'libedit' in readline.__doc__:
+    readline.parse_and_bind("bind '\t' rl_complete")
 else:
-    import rlcompleter
-    import atexit
-    history = os.path.expanduser('~/.python_history')
-    readline.read_history_file(history)
-    readline.parse_and_bind('tab: complete')
-    atexit.register(readline.write_history_file, history)
+    readline.parse_and_bind("tab: complete")
+
+atexit.register(save_history)
+del os, atexit, readline, rlcompleter, save_history, historyPath
