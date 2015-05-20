@@ -107,6 +107,12 @@ set tabstop=4
 set shiftwidth=4
 
 
+" opened a file and need to save as root
+cmap W w !sudo tee % > /dev/null
+
+" <C-l> redraws the screen and removes any search highlighting.
+nnoremap <silent> <C-l> :nohl<CR><C-l>
+
 " (Auto)functions
 
 " Bring me back to where I was
