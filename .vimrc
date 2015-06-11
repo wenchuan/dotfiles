@@ -108,7 +108,7 @@ set shiftwidth=4
 
 
 " opened a file and need to save as root
-cmap W w !sudo tee % > /dev/null
+cmap <c-w> w !sudo tee % > /dev/null
 
 " <C-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
