@@ -2,6 +2,7 @@
 
 export EDITOR=vim
 export PYTHONSTARTUP=~/.pythonrc
+export PYTHONPATH=$PYTHONPATH:.
 export PATH=$PATH:~/bin
 
 autoload -U colors && colors
